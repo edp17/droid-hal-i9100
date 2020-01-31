@@ -9,6 +9,12 @@
 
 %define installable_zip 1
 
+%define enable_kernel_update 1
+
+%define android_config \
+#define MALI_QUIRKS 1\
+%{nil}
+
 %include rpm/dhd/droid-hal-device.inc
 
 # IMPORTANT if you want to comment out any macros in your .spec, delete the %
